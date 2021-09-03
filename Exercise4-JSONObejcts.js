@@ -29,7 +29,7 @@ let studentName = prompt("Enter a name you want to search for ")
 let myStudent = myJson.students.filter(student=>{
     return (student.Name === studentName)
 })
-if(myStudent.length == 0) {
+if(myStudent.length != 0) {
     console.log(myStudent)
 } else {
     console.log("No such student");
